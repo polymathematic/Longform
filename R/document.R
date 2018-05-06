@@ -13,11 +13,10 @@
 paragraph <- function(paragraphs, show = TRUE, html = FALSE, timestamp = TRUE){
 
   if(html){
-    br <- "<br><br>"
+    output <- Longform::implode(paste0("<p>",unlist(paragraphs),"</p>"))
   } else {
-    br <- '\n\n'
+    output <- Longform::implode(unlist(paragraphs), sep = '\n\n')
   }
 
-  output <- paste(c(tab, unlist(paragraphs)), collapse = " ")
   return(output)
 }

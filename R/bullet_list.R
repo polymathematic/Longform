@@ -12,10 +12,11 @@
 
 bullet_list <- function(items, bullet = "\t-", show = TRUE, html = FALSE){
   if(html){
-    br <- "<br>"
+    output <- Longform::implode("<ul>", sprintf("%s%s%s", "<li>", unlist(items), "</li>"), "</ul>")
   } else {
     br <- '\n'
+    output <- Longform::implode(sprintf(paste0(bullet ," %s"), unlist(items)), "\n")
   }
-  output <- paste0(sprintf("%s %s", "\t-", unlist(items)), collapse = br)
+
   return(output)
 }

@@ -9,6 +9,6 @@
 #' TBD
 #'
 paragraph <- function(sentences, show = TRUE){
-  output <- paste(unlist(sentences), collapse = " ")
+  output <- Longform::implode(unlist(sentences), sep = " ")
   return(output)
 }
