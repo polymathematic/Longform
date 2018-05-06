@@ -2,7 +2,7 @@
 #'
 #' Format a list of character values as a simple series
 #'
-#' @param items An unnamed list of character values in the desired order
+#' @param items An unnamed list of character values in the desired order.
 #' @param conj The conjunction to use: "and", "or", &c.
 #' @param fallback The character string to return when the list is empty.
 #' @export
@@ -11,7 +11,7 @@
 #' fragment_series(example_items)
 
 #Format character vector as a delimited list
-fragment_series <- function(items, conj = 'and', fallback = "nothing"){
+fragment_series <- function(items, conj = 'and', fallback = NA){
 
   #How long is the list?
   i <- length(items)

@@ -4,10 +4,10 @@
 \alias{fragment_series}
 \title{Fragment: Simple Series}
 \usage{
-fragment_series(items, conj = "and", fallback = "nothing")
+fragment_series(items, conj = "and", fallback = NA)
 }
 \arguments{
-\item{items}{An unnamed list of character values in the desired order}
+\item{items}{An unnamed list of character values in the desired order.}
 
 \item{conj}{The conjunction to use: "and", "or", &c.}
 

@@ -1,6 +1,6 @@
 Package: Longform
 Type: Package
-Title: A Framework for Generating Dynamic Long-Form Text
+Title: A Framework for Generating Dynamic Long-Form Text in R
 Version: 0.1.0
 Author: Daniel H
 Description: Automated reporting benefits from long-form templated text. The conditional ruleset for creating even a simple report can be expansive. This package provides a set of tools for standardizing this logic.
