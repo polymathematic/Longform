@@ -13,7 +13,7 @@
 CreateUnorderedList <- function(items, show = TRUE, html = TRUE){
 
   if(html){
-    output <- Longform::implode("<ul>", sprintf("<li>%s</li>", unlist(items)), "</ul>")
+    output <- paste0("<ul>", Longform::implode(sprintf("<li>%s</li>", unlist(items))), "</ul>")
   } else {
     br <- '\n'
     output <- Longform::implode(sprintf(paste0("\t-" ," %s"), unlist(items)), "\n")
