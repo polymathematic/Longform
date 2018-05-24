@@ -1,6 +1,6 @@
 #' Document
 #'
-#' Form a properly formatted document from a list of paragraphs and bullet-lists
+#' Form a properly formatted document from a list of paragraphs, images, and bullet-lists
 #'
 #' @param sentences TBD
 #' @param show TBD
@@ -10,13 +10,17 @@
 #' @examples
 #' TBD
 #'
-paragraph <- function(paragraphs, show = TRUE, html = FALSE, timestamp = TRUE){
+paragraph <- function(paragraphs, show = TRUE, html = TRUE, timestamp = TRUE){
 
   if(html){
-    output <- Longform::implode(paste0("<p>",unlist(paragraphs),"</p>"))
+    output <- Longform::implode(sprintf("%s", unlist(paragraphs)))
   } else {
     output <- Longform::implode(unlist(paragraphs), sep = '\n\n')
   }
 
+  #Class as document
+  class(output) <- "document"
+
+  #Return output
   return(output)
 }

@@ -10,13 +10,18 @@
 #' @examples
 #' TBD
 
-bullet_list <- function(items, bullet = "\t-", show = TRUE, html = FALSE){
+CreateUnorderedList <- function(items, show = TRUE, html = TRUE){
+
   if(html){
-    output <- Longform::implode("<ul>", sprintf("%s%s%s", "<li>", unlist(items), "</li>"), "</ul>")
+    output <- Longform::implode("<ul>", sprintf("<li>%s</li>", unlist(items)), "</ul>")
   } else {
     br <- '\n'
-    output <- Longform::implode(sprintf(paste0(bullet ," %s"), unlist(items)), "\n")
+    output <- Longform::implode(sprintf(paste0("\t-" ," %s"), unlist(items)), "\n")
   }
 
+  #Class as unordered list
+  class(output) <- "unordered_list"
+
+  #Return output
   return(output)
 }

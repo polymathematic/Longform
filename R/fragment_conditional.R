@@ -13,7 +13,7 @@
 #' fragment_conditional(example_items, example_bool)
 
 #Format character vector as a delimited list
-fragment_conditional<- function(items, conditions, fallback = NA){
+CreateConditionalFragment <- function(items, conditions, fallback = NA){
 
   #How long is the list?
   i <- length(items)
@@ -25,6 +25,9 @@ fragment_conditional<- function(items, conditions, fallback = NA){
 
   #Return the first TRUE value
   output <- unlist(items[which(unlist(conditions))[1]])
+
+  #Class as fragment
+  class(output) <- "fragment"
 
   #Return output
   return(output)

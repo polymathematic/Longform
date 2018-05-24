@@ -9,8 +9,15 @@
 #' @examples
 #' TBD
 
-sentence <- function(fragments = list("this is the first", "and this is the second"), show = TRUE, punct = "."){
+CreateSentence <- function(fragments = list("this is the first", "and this is the second"), show = TRUE, punct = "."){
+
+
   output <- paste0(Longform::implode(unlist(fragments), sep = " "), punct)
   output <- paste0(toupper(substr(output,1,1)), substr(output,2,nchar(output)))
+
+  #Class as sentence
+  class(output) <- "sentence"
+
+  #Return output
   return(output)
 }

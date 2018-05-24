@@ -11,7 +11,7 @@
 #' fragment_series(example_items)
 
 #Format character vector as a delimited list
-fragment_series <- function(items, conj = 'and', fallback = NA){
+CreateSeriesFragment <- function(items, conj = 'and', fallback = NA){
 
   #How long is the list?
   i <- length(items)
@@ -44,6 +44,12 @@ fragment_series <- function(items, conj = 'and', fallback = NA){
     output <- paste(items, collapse = paste0(delim, ' '))
   }
 
+  #Cleanup
+  trimws(paste(output, collapse = ' '))
+
+  #Class as fragment
+  class(output) <- "fragment"
+
   #Return output
-  return(trimws(paste(output, collapse = ' ')))
+  return(output)
 }

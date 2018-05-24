@@ -14,7 +14,7 @@
 #' fragment_conditional(example_items, example_bool)
 
 #Format character vector as a delimited list
-fragment_count<- function(x, units, fallback = NA, unique = FALSE){
+CreateCountFragment <- function(x, units, fallback = NA, unique = FALSE){
 
   #Define output
   output <- NA
@@ -40,6 +40,9 @@ fragment_count<- function(x, units, fallback = NA, unique = FALSE){
   if(is.na(output)){
     output <- fallback
   }
+
+  #Class as fragment
+  class(output) <- "fragment"
 
   #Return output
   return(output)

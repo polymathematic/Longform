@@ -8,7 +8,18 @@
 #' @examples
 #' TBD
 #'
-paragraph <- function(sentences, show = TRUE){
-  output <- Longform::implode(unlist(sentences), sep = " ")
+CreateParagraph <- function(sentences, show = TRUE, html = TRUE){
+
+  if(html){
+    output <- sprintf("<p>%s</p>", Longform::implode(unlist(sentences), sep = " "))
+  } else {
+    br <- '\n'
+    output <- Longform::implode(unlist(sentences), sep = " ")
+  }
+
+  #Class as paragraph
+  class(output) <- "paragraph"
+
+  #Return output
   return(output)
 }
