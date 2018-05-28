@@ -2,6 +2,7 @@
 
 export(CreateConditionalFragment)
 export(CreateCountFragment)
+export(CreateDocument)
 export(CreateImageTag)
 export(CreateParagraph)
 export(CreateSentence)
@@ -10,4 +11,3 @@ export(CreateTimestamp)
 export(CreateURLTag)
 export(CreateUnorderedList)
 export(implode)
-export(paragraph)

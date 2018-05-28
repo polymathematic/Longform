@@ -10,7 +10,7 @@
 #' @examples
 #' TBD
 #'
-paragraph <- function(paragraphs, show = TRUE, html = TRUE, timestamp = TRUE){
+CreateDocument <- function(paragraphs, show = TRUE, html = TRUE, timestamp = TRUE){
 
   if(html){
     output <- Longform::implode(sprintf("%s", unlist(paragraphs)))
