@@ -7,13 +7,13 @@
 CreateHeader(text, h = 1, show = TRUE, html = TRUE)
 }
 \arguments{
+\item{text}{TBD}
+
+\item{h}{TBD}
+
 \item{show}{TBD}
 
 \item{html}{TBD}
-
-\item{items}{TBD}
-
-\item{bullet}{TBD}
 }
 \description{
 Create a header

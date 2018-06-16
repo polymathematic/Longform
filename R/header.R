@@ -2,8 +2,8 @@
 #'
 #' Create a header
 #'
-#' @param items TBD
-#' @param bullet TBD
+#' @param text TBD
+#' @param h TBD
 #' @param show TBD
 #' @param html TBD
 #' @export
@@ -17,8 +17,9 @@ CreateHeader <- function(text, h = 1, show = TRUE, html = TRUE){
   }
 
   if(html){
-    hlev <- sprintf("<h%i>", h)
-    output <- paste0(hlev, trimws(text), hlev)
+    output <- paste0(sprintf("<h%i>", h),
+                     trimws(text),
+                     sprintf("</h%i>", h))
   } else {
     hlev <- Longform::implode(rep('*', h))
     output <- paste0(hlev, trimws(text), hlev)
