@@ -4,16 +4,12 @@
 \alias{CreateHeader}
 \title{Header}
 \usage{
-CreateHeader(text, h = 1, show = TRUE, html = TRUE)
+CreateHeader(text, h = 1)
 }
 \arguments{
 \item{text}{TBD}
 
 \item{h}{TBD}
-
-\item{show}{TBD}
-
-\item{html}{TBD}
 }
 \description{
 Create a header

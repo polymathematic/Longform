@@ -4,14 +4,10 @@
 \alias{CreateUnorderedList}
 \title{Bullet List}
 \usage{
-CreateUnorderedList(items, show = TRUE, html = TRUE)
+CreateUnorderedList(items)
 }
 \arguments{
 \item{items}{TBD}
-
-\item{show}{TBD}
-
-\item{html}{TBD}
 
 \item{bullet}{TBD}
 }

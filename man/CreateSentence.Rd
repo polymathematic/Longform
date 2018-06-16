@@ -5,12 +5,10 @@
 \title{Sentence}
 \usage{
 CreateSentence(fragments = list("this is the first",
-  "and this is the second"), show = TRUE, punct = ".")
+  "and this is the second"), punct = ".")
 }
 \arguments{
 \item{fragments}{TBD}
-
-\item{show}{TBD}
 
 \item{punct}{TBD}
 }
@@ -18,5 +16,5 @@ CreateSentence(fragments = list("this is the first",
 Form a properly formatted sentence from a list of fragments
 }
 \examples{
-TBD
+CreateSentence(list("one more question:", "how do you feel"), punct = '?')
 }

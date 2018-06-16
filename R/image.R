@@ -8,7 +8,7 @@
 #' @examples
 #' TBD
 
-CreateImageTag <- function(url, alt = NULL, show = TRUE){
+CreateImageTag <- function(url, alt = NULL){
 
   #Create tag
   if(is.null(alt)){
@@ -22,4 +22,5 @@ CreateImageTag <- function(url, alt = NULL, show = TRUE){
 
   #Return output
   return(output)
+
 }

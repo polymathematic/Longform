@@ -6,9 +6,9 @@
 #' @param text TBD
 #' @export
 #' @examples
-#' TBD
+#' CreateURLTag("www.google.com", "Let me google that for you...")
 
-CreateURLTag <- function(href, text = "Link", show = TRUE){
+CreateURLTag <- function(href, text = "Link"){
 
   #Create tag
   output <- sprintf("<a href='%s'>%s</a>", href, text)

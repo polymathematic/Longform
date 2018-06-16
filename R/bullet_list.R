@@ -4,20 +4,15 @@
 #'
 #' @param items TBD
 #' @param bullet TBD
-#' @param show TBD
-#' @param html TBD
 #' @export
 #' @examples
 #' TBD
 
-CreateUnorderedList <- function(items, show = TRUE, html = TRUE){
+CreateUnorderedList <- function(items){
 
-  if(html){
-    output <- paste0("<ul>", Longform::implode(sprintf("<li>%s</li>", unlist(items))), "</ul>")
-  } else {
-    br <- '\n'
-    output <- Longform::implode(sprintf(paste0("\t-" ," %s"), unlist(items)), "\n")
-  }
+  output <- paste0("<ul>",
+                   Longform::implode(sprintf("<li>%s</li>", unlist(items))),
+                   "</ul>")
 
   #Class as unordered list
   class(output) <- "unordered_list"

@@ -4,12 +4,10 @@
 \alias{CreateParagraph}
 \title{Paragraph}
 \usage{
-CreateParagraph(sentences, show = TRUE, html = TRUE)
+CreateParagraph(sentences)
 }
 \arguments{
 \item{sentences}{TBD}
-
-\item{show}{TBD}
 }
 \description{
 Form a properly formatted paragraph from a list of sentences

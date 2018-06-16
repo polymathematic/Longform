@@ -4,15 +4,8 @@
 \alias{CreateTimestamp}
 \title{Timestamp}
 \usage{
-CreateTimestamp(html = TRUE)
-}
-\arguments{
-\item{html}{TBD}
+CreateTimestamp()
 }
 \description{
 A statement indicating the script completion time
-}
-\examples{
-TBD
-
 }

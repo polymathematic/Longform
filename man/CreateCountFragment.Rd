@@ -19,8 +19,5 @@ CreateCountFragment(x, units, fallback = NA, unique = FALSE)
 Return a statment summarising the number of items in a set
 }
 \examples{
-x <- 10
-example_items <- list("an increase", "a decrease", "no change")
-example_bool <- list(x > 0, x < 0, x == 0)
-fragment_conditional(example_items, example_bool)
+CreateCountFragment(c('A','A','B','B','C','C','C'), units = c('letter', 'letters'), unique = TRUE)
 }

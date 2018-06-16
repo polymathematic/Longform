@@ -4,7 +4,7 @@
 \alias{CreateURLTag}
 \title{URL Fragment}
 \usage{
-CreateURLTag(href, text = "Link", show = TRUE)
+CreateURLTag(href, text = "Link")
 }
 \arguments{
 \item{href}{TBD}
@@ -15,5 +15,5 @@ CreateURLTag(href, text = "Link", show = TRUE)
 Format an url tag
 }
 \examples{
-TBD
+CreateURLTag("www.google.com", "Let me google that for you...")
 }

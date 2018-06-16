@@ -4,16 +4,10 @@
 \alias{CreateDocument}
 \title{Document}
 \usage{
-CreateDocument(paragraphs, show = TRUE, html = TRUE, timestamp = TRUE)
+CreateDocument(paragraphs)
 }
 \arguments{
-\item{show}{TBD}
-
-\item{html}{TBD}
-
-\item{timestamp}{TBD}
-
-\item{sentences}{TBD}
+\item{paragraphs}{TBD}
 }
 \description{
 Form a properly formatted document from a list of paragraphs, images, and bullet-lists

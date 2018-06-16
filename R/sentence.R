@@ -3,14 +3,12 @@
 #' Form a properly formatted sentence from a list of fragments
 #'
 #' @param fragments TBD
-#' @param show TBD
 #' @param punct TBD
 #' @export
 #' @examples
-#' TBD
+#' CreateSentence(list("one more question:", "how do you feel"), punct = '?')
 
-CreateSentence <- function(fragments = list("this is the first", "and this is the second"), show = TRUE, punct = "."){
-
+CreateSentence <- function(fragments = list("this is the first", "and this is the second"), punct = "."){
 
   output <- paste0(Longform::implode(unlist(fragments), sep = " "), punct)
   output <- paste0(toupper(substr(output,1,1)), substr(output,2,nchar(output)))

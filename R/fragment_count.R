@@ -8,10 +8,7 @@
 #' @param unique Should only unique values be counted?
 #' @export
 #' @examples
-#' x <- 10
-#' example_items <- list("an increase", "a decrease", "no change")
-#' example_bool <- list(x > 0, x < 0, x == 0)
-#' fragment_conditional(example_items, example_bool)
+#' CreateCountFragment(c('A','A','B','B','C','C','C'), units = c('letter', 'letters'), unique = TRUE)
 
 #Format character vector as a delimited list
 CreateCountFragment <- function(x, units, fallback = NA, unique = FALSE){
@@ -33,12 +30,11 @@ CreateCountFragment <- function(x, units, fallback = NA, unique = FALSE){
     units <- units[2]
   }
 
-  #If the list is empty return fallback string
-  output <- sprintf("%i %s", n, units)
-
-  #populate fallback if necessary
-  if(is.na(output)){
-    output <- fallback
+  #Compile
+  if(n > 0){
+    output <- sprintf("%i %s", n, units)
+  } else {
+    output <- fallback #populate fallback if necessary
   }
 
   #Class as fragment

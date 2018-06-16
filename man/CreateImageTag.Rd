@@ -4,7 +4,7 @@
 \alias{CreateImageTag}
 \title{Image}
 \usage{
-CreateImageTag(url, alt = NULL, show = TRUE)
+CreateImageTag(url, alt = NULL)
 }
 \arguments{
 \item{alt}{TBD}
