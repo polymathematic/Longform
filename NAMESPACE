@@ -3,6 +3,7 @@
 export(CreateConditionalFragment)
 export(CreateCountFragment)
 export(CreateDocument)
+export(CreateHeader)
 export(CreateImageTag)
 export(CreateParagraph)
 export(CreateSentence)

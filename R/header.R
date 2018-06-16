@@ -10,7 +10,7 @@
 #' @examples
 #' TBD
 
-CreateUnorderedList <- function(text, h = 1, show = TRUE, html = TRUE){
+CreateHeader <- function(text, h = 1, show = TRUE, html = TRUE){
 
   if(!(h<=6 & h>=1)){
     stop("h must be between 1 and 6")
