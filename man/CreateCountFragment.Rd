@@ -4,16 +4,14 @@
 \alias{CreateCountFragment}
 \title{Fragment: Count of values in a vector}
 \usage{
-CreateCountFragment(x, units, fallback = NA, unique = FALSE)
+CreateCountFragment(x = NULL, units, fallback = NA)
 }
 \arguments{
-\item{x}{A vector of any class.}
+\item{x}{An integer vector greater than or equal to 0,}
 
 \item{units}{A vector of length 2 indicating the singular and plural of x's units (e.g., c("country","countries")).}
 
 \item{fallback}{The character string to return in case of error}
-
-\item{unique}{Should only unique values be counted?}
 }
 \description{
 Return a statment summarising the number of items in a set

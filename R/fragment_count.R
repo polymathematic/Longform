@@ -2,40 +2,49 @@
 #'
 #' Return a statment summarising the number of items in a set
 #'
-#' @param x A vector of any class.
+#' @param x An integer vector greater than or equal to 0,
 #' @param units A vector of length 2 indicating the singular and plural of x's units (e.g., c("country","countries")).
 #' @param fallback The character string to return in case of error
-#' @param unique Should only unique values be counted?
 #' @export
 #' @examples
 #' CreateCountFragment(c('A','A','B','B','C','C','C'), units = c('letter', 'letters'), unique = TRUE)
 
 #Format character vector as a delimited list
-CreateCountFragment <- function(x, units, fallback = NA, unique = FALSE){
+CreateCountFragment <- function(x = NULL, units, fallback = NA){
+
+  #Return fallback if necessary
+  if(is.null(x)){
+    return(fallback)
+  }
+
+  #Return fallback if necessary
+  if(any(is.na(x))){
+    x <- na.omit(x)
+  }
+
+  #Check for negatives
+  if(any(x<0)){
+    stop("All values of x must be greater than 0")
+  }
 
   #Define output
-  output <- NA
+  output <- fallback
 
-  #How many values?
-  if(unique){
-    n <- length(unique(x))
-  } else {
-    n <- length(x)
-  }
+  output <- sapply(x, function(x){
 
-  #what units are we using
-  if(n == 1){
-    units <- units[1]
-  } else {
-    units <- units[2]
-  }
+    #what units are we using
+    if(x == 1){
+      units <- units[1]
+    } else {
+      units <- units[2]
+    }
 
-  #Compile
-  if(n > 0){
-    output <- sprintf("%i %s", n, units)
-  } else {
-    output <- fallback #populate fallback if necessary
-  }
+    #Compile
+    x <- sprintf("%i %s", x, units)
+
+    return(x)
+
+  })
 
   #Class as fragment
   class(output) <- "fragment"
