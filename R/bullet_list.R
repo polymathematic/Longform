@@ -2,11 +2,10 @@
 #'
 #' Form a properly formatted bullet list from a list of items
 #'
-#' @param items TBD
-#' @param bullet TBD
+#' @param items A list or vector of items (in desired order)
 #' @export
 #' @examples
-#' TBD
+#' CreateUnorderedList(items = list("DC Brau", "Helllbender", "Three Star", "Right Proper", "Blue Jacket", "Public Option"))
 
 CreateUnorderedList <- function(items){
 

@@ -7,13 +7,10 @@
 CreateHeader(text, h = 1)
 }
 \arguments{
-\item{text}{TBD}
+\item{text}{The text value for the header}
 
-\item{h}{TBD}
+\item{h}{The header level}
 }
 \description{
-Create a header
-}
-\examples{
-TBD
+Create a header tag (H1 - H6)
 }

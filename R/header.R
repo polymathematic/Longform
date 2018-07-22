@@ -1,12 +1,10 @@
 #' Header
 #'
-#' Create a header
+#' Create a header tag (H1 - H6)
 #'
-#' @param text TBD
-#' @param h TBD
+#' @param text The text value for the header
+#' @param h The header level
 #' @export
-#' @examples
-#' TBD
 
 CreateHeader <- function(text, h = 1){
 

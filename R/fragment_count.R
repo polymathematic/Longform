@@ -7,7 +7,7 @@
 #' @param fallback The character string to return in case of error
 #' @export
 #' @examples
-#' CreateCountFragment(c('A','A','B','B','C','C','C'), units = c('letter', 'letters'), unique = TRUE)
+#' CreateCountFragment(c(1, 2), units = c('fish', 'fish'), fallback = "Red fish, blue fish")
 
 #Format character vector as a delimited list
 CreateCountFragment <- function(x = NULL, units, fallback = NA){

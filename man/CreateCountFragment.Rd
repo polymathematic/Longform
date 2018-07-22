@@ -17,5 +17,5 @@ CreateCountFragment(x = NULL, units, fallback = NA)
 Return a statment summarising the number of items in a set
 }
 \examples{
-CreateCountFragment(c('A','A','B','B','C','C','C'), units = c('letter', 'letters'), unique = TRUE)
+CreateCountFragment(c(1, 2), units = c('fish', 'fish'), fallback = "Red fish, blue fish")
 }

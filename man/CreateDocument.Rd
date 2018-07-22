@@ -7,12 +7,8 @@
 CreateDocument(paragraphs)
 }
 \arguments{
-\item{paragraphs}{TBD}
+\item{paragraphs}{A list of paragraph objects}
 }
 \description{
 Form a properly formatted document from a list of paragraphs, images, and bullet-lists
-}
-\examples{
-TBD
-
 }
