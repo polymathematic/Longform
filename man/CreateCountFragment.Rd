@@ -4,10 +4,10 @@
 \alias{CreateCountFragment}
 \title{Fragment: Count of values in a vector}
 \usage{
-CreateCountFragment(x = NULL, units, fallback = NA)
+CreateCountFragment(x, units, fallback)
 }
 \arguments{
-\item{x}{An integer vector greater than or equal to 0,}
+\item{x}{A vector of integer values.}
 
 \item{units}{A vector of length 2 indicating the singular and plural of x's units (e.g., c("country","countries")).}
 
@@ -17,5 +17,5 @@ CreateCountFragment(x = NULL, units, fallback = NA)
 Return a statment summarising the number of items in a set
 }
 \examples{
-CreateCountFragment(c(1, 2), units = c('fish', 'fish'), fallback = "Red fish, blue fish")
+CreateCountFragment(c(1, 2, 3), units = c('letter', 'letters'))
 }
