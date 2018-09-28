@@ -2,8 +2,8 @@
 #'
 #' Format an url tag
 #'
-#' @param href TBD
-#' @param text TBD
+#' @param href A character value for the URL (href) attribute of the desired link
+#' @param text The text value for the link
 #' @export
 #' @examples
 #' CreateURLTag("www.google.com", "Let me google that for you...")

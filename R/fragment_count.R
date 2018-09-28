@@ -2,39 +2,43 @@
 #'
 #' Return a statment summarising the number of items in a set
 #'
-#' @param x A vector of any class.
+#' @param x A vector of integer values.
 #' @param units A vector of length 2 indicating the singular and plural of x's units (e.g., c("country","countries")).
 #' @param fallback The character string to return in case of error
-#' @param unique Should only unique values be counted?
 #' @export
 #' @examples
-#' CreateCountFragment(c('A','A','B','B','C','C','C'), units = c('letter', 'letters'), unique = TRUE)
+#' CreateCountFragment(c(1, 2, 3), units = c('letter', 'letters'))
 
 #Format character vector as a delimited list
-CreateCountFragment <- function(x, units, fallback = NA, unique = FALSE){
+CreateCountFragment <- function(x, units, fallback){
+
+  #Check for class integer
+  if(class(x) != "integer"){
+    stop("x must be an integer")
+  }
 
   #Define output
-  output <- NA
+  output <- c()
 
-  #How many values?
-  if(unique){
-    n <- length(unique(x))
-  } else {
-    n <- length(x)
-  }
+  #Loop over x
+  for(i in 1:length(x)){
 
-  #what units are we using
-  if(n == 1){
-    units <- units[1]
-  } else {
-    units <- units[2]
-  }
+    #Extract value
+    val <- x[i]
 
-  #Compile
-  if(n > 0){
-    output <- sprintf("%i %s", n, units)
-  } else {
-    output <- fallback #populate fallback if necessary
+    #what units are we using
+    if(val != 1 | is.na(val)){
+      unit <- units[2]
+    } else {
+      unit <- units[1]
+    }
+
+    #Compile
+    if(!is.na(val)){
+      output[i] <- sprintf("%i %s", val, unit)
+    } else {
+      output[i] <- sprintf("%s %s", fallback, unit) #populate fallback if necessary
+    }
   }
 
   #Class as fragment

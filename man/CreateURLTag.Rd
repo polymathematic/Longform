@@ -7,9 +7,9 @@
 CreateURLTag(href, text = "Link")
 }
 \arguments{
-\item{href}{TBD}
+\item{href}{A character value for the URL (href) attribute of the desired link}
 
-\item{text}{TBD}
+\item{text}{The text value for the link}
 }
 \description{
 Format an url tag

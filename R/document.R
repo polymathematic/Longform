@@ -2,11 +2,9 @@
 #'
 #' Form a properly formatted document from a list of paragraphs, images, and bullet-lists
 #'
-#' @param paragraphs TBD
+#' @param paragraphs A list of paragraph objects
 #' @export
-#' @examples
-#' TBD
-#'
+
 CreateDocument <- function(paragraphs){
 
   output <- Longform::implode(sprintf("%s", unlist(paragraphs)))

@@ -7,13 +7,11 @@
 CreateUnorderedList(items)
 }
 \arguments{
-\item{items}{TBD}
-
-\item{bullet}{TBD}
+\item{items}{A list or vector of items (in desired order)}
 }
 \description{
 Form a properly formatted bullet list from a list of items
 }
 \examples{
-TBD
+CreateUnorderedList(items = list("DC Brau", "Helllbender", "Three Star", "Right Proper", "Blue Jacket", "Public Option"))
 }
