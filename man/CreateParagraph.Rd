@@ -2,17 +2,13 @@
 % Please edit documentation in R/paragraph.R
 \name{CreateParagraph}
 \alias{CreateParagraph}
-\title{Paragraph}
+\title{Compile sentences into a paragraph}
 \usage{
 CreateParagraph(sentences)
 }
 \arguments{
-\item{sentences}{TBD}
+\item{sentences}{A list of sentences to be compiled into a paragraph.}
 }
 \description{
 Form a properly formatted paragraph from a list of sentences
-}
-\examples{
-TBD
-
 }

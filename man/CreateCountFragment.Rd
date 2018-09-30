@@ -2,7 +2,7 @@
 % Please edit documentation in R/fragment_count.R
 \name{CreateCountFragment}
 \alias{CreateCountFragment}
-\title{Fragment: Count of values in a vector}
+\title{Create a fragment based on the count of values in a vector}
 \usage{
 CreateCountFragment(x, units, fallback)
 }
@@ -17,5 +17,5 @@ CreateCountFragment(x, units, fallback)
 Return a statment summarising the number of items in a set
 }
 \examples{
-CreateCountFragment(c(1, 2, 3), units = c('letter', 'letters'))
+CreateCountFragment(as.integer(c(1, 2, 3, NA)), units = c('letter', 'letters'), fallback = "an unknown number of")
 }

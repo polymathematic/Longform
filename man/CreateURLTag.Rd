@@ -2,7 +2,7 @@
 % Please edit documentation in R/fragment_url.R
 \name{CreateURLTag}
 \alias{CreateURLTag}
-\title{URL Fragment}
+\title{Create a URL (href) tag}
 \usage{
 CreateURLTag(href, text = "Link")
 }

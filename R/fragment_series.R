@@ -1,4 +1,4 @@
-#' Fragment: Simple Series
+#' Create a simple conjunctive series
 #'
 #' Format a list of character values as a simple series
 #'

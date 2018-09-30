@@ -2,7 +2,7 @@
 % Please edit documentation in R/fragment_conditional.R
 \name{CreateConditionalFragment}
 \alias{CreateConditionalFragment}
-\title{Fragment: Condition-Based Statement}
+\title{Create a fragment based on a boolean condition}
 \usage{
 CreateConditionalFragment(items, conditions, fallback = NA)
 }

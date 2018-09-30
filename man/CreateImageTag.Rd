@@ -2,7 +2,7 @@
 % Please edit documentation in R/image.R
 \name{CreateImageTag}
 \alias{CreateImageTag}
-\title{Image}
+\title{Add an image tag}
 \usage{
 CreateImageTag(url, alt = NULL)
 }
@@ -13,7 +13,4 @@ CreateImageTag(url, alt = NULL)
 }
 \description{
 Format an HTML image tag
-}
-\examples{
-TBD
 }

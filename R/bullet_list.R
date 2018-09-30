@@ -1,6 +1,6 @@
-#' Bullet List
+#' Create an unordered list
 #'
-#' Form a properly formatted bullet list from a list of items
+#' Form a properly formatted bullet list from a vector of items
 #'
 #' @param items A list or vector of items (in desired order)
 #' @export
@@ -14,7 +14,7 @@ CreateUnorderedList <- function(items){
                    "</ul>")
 
   #Class as unordered list
-  class(output) <- "unordered_list"
+  class(output) <- c("unordered_list", "paragraph")
 
   #Return output
   return(output)

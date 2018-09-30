@@ -1,4 +1,4 @@
-#' Document
+#' Compile items into a document
 #'
 #' Form a properly formatted document from a list of paragraphs, images, and bullet-lists
 #'

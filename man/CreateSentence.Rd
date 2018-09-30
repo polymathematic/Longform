@@ -2,15 +2,15 @@
 % Please edit documentation in R/sentence.R
 \name{CreateSentence}
 \alias{CreateSentence}
-\title{Sentence}
+\title{Compile fragments into a sentence}
 \usage{
 CreateSentence(fragments = list("this is the first",
   "and this is the second"), punct = ".")
 }
 \arguments{
-\item{fragments}{TBD}
+\item{fragments}{A list of fragments to be compiled into a sentence.}
 
-\item{punct}{TBD}
+\item{punct}{The punctuation used at the end of the sentence.}
 }
 \description{
 Form a properly formatted sentence from a list of fragments

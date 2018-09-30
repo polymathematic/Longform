@@ -1,4 +1,4 @@
-#' Header
+#' Add a header tag
 #'
 #' Create a header tag (H1 - H6)
 #'
@@ -17,7 +17,7 @@ CreateHeader <- function(text, h = 1){
                    sprintf("</h%i>", h))
 
   #Class as header
-  class(output) <- "header"
+  class(output) <- c("header", "paragraph")
 
   #Return output
   return(output)

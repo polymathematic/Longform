@@ -2,9 +2,9 @@
 % Please edit documentation in R/timestamp.R
 \name{CreateTimestamp}
 \alias{CreateTimestamp}
-\title{Timestamp}
+\title{Add a timestamp}
 \usage{
-CreateTimestamp()
+CreateTimestamp(timezone = "UTC")
 }
 \description{
 A statement indicating the script completion time

@@ -2,7 +2,7 @@
 % Please edit documentation in R/fragment_series.R
 \name{CreateSeriesFragment}
 \alias{CreateSeriesFragment}
-\title{Fragment: Simple Series}
+\title{Create a simple conjunctive series}
 \usage{
 CreateSeriesFragment(items, conj = "and", fallback = NA)
 }

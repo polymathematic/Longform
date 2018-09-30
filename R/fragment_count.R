@@ -1,4 +1,4 @@
-#' Fragment: Count of values in a vector
+#' Create a fragment based on the count of values in a vector
 #'
 #' Return a statment summarising the number of items in a set
 #'
@@ -7,7 +7,7 @@
 #' @param fallback The character string to return in case of error
 #' @export
 #' @examples
-#' CreateCountFragment(c(1, 2, 3), units = c('letter', 'letters'))
+#' CreateCountFragment(as.integer(c(1, 2, 3, NA)), units = c('letter', 'letters'), fallback = "an unknown number of")
 
 #Format character vector as a delimited list
 CreateCountFragment <- function(x, units, fallback){

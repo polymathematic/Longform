@@ -2,7 +2,7 @@
 % Please edit documentation in R/bullet_list.R
 \name{CreateUnorderedList}
 \alias{CreateUnorderedList}
-\title{Bullet List}
+\title{Create an unordered list}
 \usage{
 CreateUnorderedList(items)
 }
@@ -10,7 +10,7 @@ CreateUnorderedList(items)
 \item{items}{A list or vector of items (in desired order)}
 }
 \description{
-Form a properly formatted bullet list from a list of items
+Form a properly formatted bullet list from a vector of items
 }
 \examples{
 CreateUnorderedList(items = list("DC Brau", "Helllbender", "Three Star", "Right Proper", "Blue Jacket", "Public Option"))

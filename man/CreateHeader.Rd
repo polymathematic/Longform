@@ -2,7 +2,7 @@
 % Please edit documentation in R/header.R
 \name{CreateHeader}
 \alias{CreateHeader}
-\title{Header}
+\title{Add a header tag}
 \usage{
 CreateHeader(text, h = 1)
 }

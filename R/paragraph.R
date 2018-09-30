@@ -1,12 +1,10 @@
-#' Paragraph
+#' Compile sentences into a paragraph
 #'
 #' Form a properly formatted paragraph from a list of sentences
 #'
-#' @param sentences TBD
+#' @param sentences A list of sentences to be compiled into a paragraph.
 #' @export
-#' @examples
-#' TBD
-#'
+
 CreateParagraph <- function(sentences){
 
   output <- sprintf("<p>%s</p>", Longform::implode(unlist(sentences), sep = " "))

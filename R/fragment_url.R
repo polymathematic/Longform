@@ -1,4 +1,4 @@
-#' URL Fragment
+#' Create a URL (href) tag
 #'
 #' Format an url tag
 #'

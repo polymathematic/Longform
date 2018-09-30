@@ -1,9 +1,9 @@
-#' Sentence
+#' Compile fragments into a sentence
 #'
 #' Form a properly formatted sentence from a list of fragments
 #'
-#' @param fragments TBD
-#' @param punct TBD
+#' @param fragments A list of fragments to be compiled into a sentence.
+#' @param punct The punctuation used at the end of the sentence.
 #' @export
 #' @examples
 #' CreateSentence(list("one more question:", "how do you feel"), punct = '?')

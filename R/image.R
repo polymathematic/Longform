@@ -1,12 +1,10 @@
-#' Image
+#' Add an image tag
 #'
 #' Format an HTML image tag
 #'
 #' @param src TBD
 #' @param alt TBD
 #' @export
-#' @examples
-#' TBD
 
 CreateImageTag <- function(url, alt = NULL){
 

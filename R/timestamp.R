@@ -1,15 +1,23 @@
-#' Timestamp
+#' Add a timestamp
 #'
 #' A statement indicating the script completion time
 #'
 #' @export
-#'
-CreateTimestamp <- function(){
 
-  output <- sprintf("<p>Script complete at %s</p>", Sys.time())
+CreateTimestamp <- function(timezone = "UTC"){
+
+  #Validate timezone
+  if(!(timezone %in% OlsonNames())){
+    stop(sprintf("%s is not a valid timezone. See OlsonNames().", timezone))
+  }
+
+  #Create output
+  output <- sprintf("<p>Script complete at %s (%s)</p>",
+                    lubridate::with_tz(Sys.time(), tzone = timezone),
+                    timezone)
 
   #Class as paragraph
-  class(output) <- "timestamp"
+  class(output) <- c("timestamp", "paragraph")
 
   #Return output
   return(output)
