@@ -4,7 +4,7 @@
 \alias{knit_to_html}
 \title{Knit a document to HTML}
 \usage{
-knit_to_html(input)
+knit_to_html(input, params = NULL)
 }
 \arguments{
 \item{input}{Path to the input R markdown file.}
