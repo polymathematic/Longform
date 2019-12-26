@@ -9,6 +9,6 @@
 #' eval_meta(rmarkdown::metadata$date)
 
 eval_meta <- function(meta){
-  temp_meta <- eval(parse(text = gsub("`|r", "", meta)))
+  temp_meta <- eval(parse(text = gsub("(^`r\\s+)|(`$)", "", meta)))
   return(temp_meta)
 }
