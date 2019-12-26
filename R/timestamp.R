@@ -17,7 +17,7 @@ CreateTimestamp <- function(timezone = "UTC"){
                     timezone)
 
   #Class as paragraph
-  class(output) <- c("timestamp", "paragraph")
+  class(output) <- c("timestamp")
 
   #Return output
   return(output)
