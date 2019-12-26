@@ -2,15 +2,17 @@
 % Please edit documentation in R/knit_to_html.R
 \name{knit_to_html}
 \alias{knit_to_html}
-\title{Knit a document to HTML}
+\title{Knit a document to an HTML character string}
 \usage{
-knit_to_html(input, params = NULL)
+knit_to_html(input, parameters = list())
 }
 \arguments{
 \item{input}{Path to the input R markdown file.}
+
+\item{params}{Parameters to pass to rmarkdown::render().}
 }
 \value{
-Returns properly formatted HTML and metadata derived from an R Markdown file.
+Returns properly formatted HTML derived from an R Markdown file.
 }
 \description{
 \code{knit_to_html()} creates properly formatted HTML and metadata from an R markdown file.
