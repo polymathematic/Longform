@@ -1,4 +1,4 @@
-# Longform (Version 0.5.0)
+# Longform (Version 0.6.0)
 
 A framework for generating dynamic longform HTML in R
 
