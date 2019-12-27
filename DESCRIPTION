@@ -1,7 +1,7 @@
 Package: Longform
 Type: Package
 Title: A framework for generating dynamic longform HTML in R
-Version: 0.5.0
+Version: 0.6.0
 Author: SundryThought
 Description: Automated reporting benefits from long-form templated text. The conditional ruleset for creating even a simple report can be expansive. This package provides a set of tools for standardizing this logic.
 URL: https://github.com/polymathematic/Longform
