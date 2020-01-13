@@ -1,4 +1,4 @@
-# Longform (Version 0.5.0)
+# Longform (Version 0.6.0)
 
 A framework for generating dynamic longform HTML in R
 
@@ -28,3 +28,9 @@ devtools::install_github("https://github.com/polymathematic/Longform")
 - **CreateURLTag()** Create a URL (href) tag
 - **implode()** Implode a list of strings
 
+## TODO
+
+- The initial idea to directly generate HTML tags was misguided. These should be gradually replaced with functions that only format Rmarkdown.
+- Nested lists are:
+  * Not possible at the moment
+- Only in-line codeblocks are properly interpreted as markdown. Why is this?
