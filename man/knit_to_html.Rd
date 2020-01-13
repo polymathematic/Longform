@@ -4,10 +4,12 @@
 \alias{knit_to_html}
 \title{Knit a document to an HTML character string}
 \usage{
-knit_to_html(input, parameters = list())
+knit_to_html(input, parameters = list(), self_contained = FALSE)
 }
 \arguments{
 \item{input}{Path to the input R markdown file.}
+
+\item{self_contained}{Should the output HTML reference external assets or should they be compiled?}
 
 \item{params}{Parameters to pass to rmarkdown::render().}
 }
@@ -16,7 +18,4 @@ Returns properly formatted HTML derived from an R Markdown file.
 }
 \description{
 \code{knit_to_html()} creates properly formatted HTML and metadata from an R markdown file.
-}
-\examples{
-TBD
 }

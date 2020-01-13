@@ -4,10 +4,11 @@
 #'
 #' @param input Path to the input R markdown file.
 #' @param params Parameters to pass to rmarkdown::render().
+#' @param self_contained Should the output HTML reference external assets or should they be compiled?
 #' @return Returns properly formatted HTML derived from an R Markdown file.
 #' @export
 
-knit_to_html <- function(input, parameters = list()){
+knit_to_html <- function(input, parameters = list(), self_contained = FALSE){
 
   #Declare output
   output_html <- character()
@@ -29,6 +30,7 @@ knit_to_html <- function(input, parameters = list()){
   rmarkdown::render(input,
                     output_file = temp_file,
                     output_dir = temp_dir,
+                    output_options = list(self_contained = self_contained),
                     params = parameters)
   output_html <- readr::read_file(paste0(temp_dir, path_sep, temp_file))
   unlink(paste0(temp_dir, path_sep, temp_file))
