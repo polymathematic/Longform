@@ -36,7 +36,7 @@ knit_to_html <- function(input, parameters = list(), self_contained = FALSE){
 
   #Clean up HTML
   output_html <- stringr::str_replace_all(output_html, "\"(?=[^<]*>)" , "'")
-  output_html <- stringr::str_replace_all(x, "[\r\n]" , "")
+  output_html <- stringr::str_replace_all(output_html, "[\r\n]" , "")
 
   #Delete temp file
   unlink(paste0(temp_dir, path_sep, temp_file))
