@@ -2,7 +2,7 @@
 % Please edit documentation in R/fragment_count.R
 \name{CreateCountFragment}
 \alias{CreateCountFragment}
-\title{Create a fragment based on the count of values in a vector}
+\title{Create a fragment based on the count of values in a vector (Deprecated)}
 \usage{
 CreateCountFragment(x, units, fallback)
 }

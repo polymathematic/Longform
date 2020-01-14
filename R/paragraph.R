@@ -1,4 +1,4 @@
-#' Compile sentences into a paragraph
+#' Compile sentences into a paragraph (Deprecated)
 #'
 #' Form a properly formatted paragraph from a list of sentences
 #'

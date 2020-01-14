@@ -1,4 +1,4 @@
-#' Add an image tag
+#' Add an image tag (Deprecated)
 #'
 #' Format an HTML image tag
 #'

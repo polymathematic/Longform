@@ -1,4 +1,4 @@
-#' Create a fragment based on a boolean condition (Deprecated)
+#' Create a fragment based on a boolean condition
 #'
 #' Return a single character value from a pre-defined set based on a corresponding set of conditions
 #'
@@ -10,10 +10,10 @@
 #' x <- 10
 #' example_items <- list("an increase", "a decrease", "no change")
 #' example_bool <- list(x > 0, x < 0, x == 0)
-#' CreateConditionalFragment(example_items, example_bool)
+#' fragment_conditional(example_items, example_bool)
 
 #Format character vector as a delimited list
-CreateConditionalFragment <- function(items, conditions, fallback = NA){
+fragment_conditional <- function(items, conditions, fallback = NA){
 
   #How long is the list?
   i <- length(items)

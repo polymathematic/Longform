@@ -2,7 +2,7 @@
 % Please edit documentation in R/timestamp.R
 \name{CreateTimestamp}
 \alias{CreateTimestamp}
-\title{Add a timestamp}
+\title{Add a timestamp (Deprecated)}
 \usage{
 CreateTimestamp(timezone = "UTC")
 }

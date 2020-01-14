@@ -2,7 +2,7 @@
 % Please edit documentation in R/document.R
 \name{CreateDocument}
 \alias{CreateDocument}
-\title{Compile items into a document}
+\title{Compile items into a document (Deprecated)}
 \usage{
 CreateDocument(paragraphs)
 }

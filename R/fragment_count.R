@@ -1,4 +1,4 @@
-#' Create a fragment based on the count of values in a vector
+#' Create a fragment based on the count of values in a vector (Deprecated)
 #'
 #' Return a statment summarising the number of items in a set
 #'

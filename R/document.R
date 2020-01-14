@@ -1,4 +1,4 @@
-#' Compile items into a document
+#' Compile items into a document (Deprecated)
 #'
 #' Form a properly formatted document from a list of paragraphs, images, and bullet-lists
 #'

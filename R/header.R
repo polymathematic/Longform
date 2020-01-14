@@ -1,4 +1,4 @@
-#' Add a header tag
+#' Add a header tag (Deprecated)
 #'
 #' Create a header tag (H1 - H6)
 #'

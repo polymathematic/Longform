@@ -2,7 +2,7 @@
 % Please edit documentation in R/fragment_url.R
 \name{CreateURLTag}
 \alias{CreateURLTag}
-\title{Create a URL (href) tag}
+\title{Create a URL (href) tag (Deprecated)}
 \usage{
 CreateURLTag(href, text = "Link")
 }

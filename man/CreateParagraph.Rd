@@ -2,7 +2,7 @@
 % Please edit documentation in R/paragraph.R
 \name{CreateParagraph}
 \alias{CreateParagraph}
-\title{Compile sentences into a paragraph}
+\title{Compile sentences into a paragraph (Deprecated)}
 \usage{
 CreateParagraph(sentences)
 }

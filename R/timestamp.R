@@ -1,4 +1,4 @@
-#' Add a timestamp
+#' Add a timestamp (Deprecated)
 #'
 #' A statement indicating the script completion time
 #'

@@ -2,7 +2,7 @@
 % Please edit documentation in R/image.R
 \name{CreateImageTag}
 \alias{CreateImageTag}
-\title{Add an image tag}
+\title{Add an image tag (Deprecated)}
 \usage{
 CreateImageTag(url, alt = NULL)
 }

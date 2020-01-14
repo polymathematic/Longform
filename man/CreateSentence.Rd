@@ -2,7 +2,7 @@
 % Please edit documentation in R/sentence.R
 \name{CreateSentence}
 \alias{CreateSentence}
-\title{Compile fragments into a sentence}
+\title{Compile fragments into a sentence (Deprecated)}
 \usage{
 CreateSentence(fragments = list("this is the first",
   "and this is the second"), punct = ".")

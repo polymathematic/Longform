@@ -1,4 +1,4 @@
-#' Create a simple conjunctive series (Deprecated)
+#' Create a simple conjunctive series
 #'
 #' Format a list of character values as a simple series
 #'
@@ -11,7 +11,7 @@
 #' fragment_series(example_items)
 
 #Format character vector as a delimited list
-CreateSeriesFragment <- function(items, conj = 'and', fallback = NA){
+fragment_series <- function(items, conj = 'and', fallback = NA){
 
   #How long is the list?
   i <- length(items)

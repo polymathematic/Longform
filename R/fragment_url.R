@@ -1,4 +1,4 @@
-#' Create a URL (href) tag
+#' Create a URL (href) tag (Deprecated)
 #'
 #' Format an url tag
 #'

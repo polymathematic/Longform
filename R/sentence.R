@@ -1,4 +1,4 @@
-#' Compile fragments into a sentence
+#' Compile fragments into a sentence (Deprecated)
 #'
 #' Form a properly formatted sentence from a list of fragments
 #'
