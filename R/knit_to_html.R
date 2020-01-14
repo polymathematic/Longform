@@ -21,7 +21,7 @@ knit_to_html <- function(input, parameters = list(), self_contained = FALSE){
   }
 
   #Format HTML
-  temp_dir <- tempdir(check = TRUE)
+  temp_dir <- tempdir() #tempdir(check = TRUE)
   temp_file <- unlist(strsplit(tempfile(pattern = "temp",
                                         tmpdir = temp_dir,
                                         fileext = ".html"),
