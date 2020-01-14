@@ -2,9 +2,10 @@
 % Please edit documentation in R/fragment_count_refac.R
 \name{fragment_count}
 \alias{fragment_count}
-\title{Create a count fragment based on a count and singular/plural units}
+\title{Create a count fragment based on an integer value and singular/plural units}
 \usage{
-fragment_count(x, units, fallback = 0)
+fragment_count(x, units, fallback = 0, spellout = FALSE,
+  comma = !spellout, thousands_mark = ",", decimal_mark = ".")
 }
 \arguments{
 \item{x}{An integer value.}
@@ -12,9 +13,17 @@ fragment_count(x, units, fallback = 0)
 \item{units}{A vector of length 2 indicating the singular and plural of x's units (e.g., c("country","countries")).}
 
 \item{fallback}{The character string to return in case of error}
+
+\item{spellout}{Should the integer be expressed as a word (e.g., 17 becomes "seventeen")}
+
+\item{comma}{Should the integer include a thousands in the}
+
+\item{thousands_mark}{The character used to separate orders of a thousand}
+
+\item{decimal_mark}{The character used as the decimal}
 }
 \description{
-Create a count fragment based on a count and singular/plural units
+Create a count fragment based on an integer value and singular/plural units
 }
 \examples{
 fragment_count(as.integer(c(1, 2, 3, NA)), units = c('letter', 'letters'), fallback = "an unknown number of")

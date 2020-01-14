@@ -2,7 +2,7 @@
 % Please edit documentation in R/fragment_conditional_refac.R
 \name{fragment_conditional}
 \alias{fragment_conditional}
-\title{Create a fragment based on a boolean condition}
+\title{Create a fragment based on one or more boolean conditions}
 \usage{
 fragment_conditional(items, conditions, fallback = NA)
 }

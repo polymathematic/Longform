@@ -1,4 +1,4 @@
-#' Create a fragment based on a boolean condition
+#' Create a fragment based on one or more boolean conditions
 #'
 #' Return a single character value from a pre-defined set based on a corresponding set of conditions
 #'

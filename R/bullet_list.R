@@ -1,4 +1,4 @@
-#' Create an unordered list
+#' Create an unordered list (Deprecated)
 #'
 #' Form a properly formatted bullet list from a vector of items
 #'

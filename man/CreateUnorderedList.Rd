@@ -2,7 +2,7 @@
 % Please edit documentation in R/bullet_list.R
 \name{CreateUnorderedList}
 \alias{CreateUnorderedList}
-\title{Create an unordered list}
+\title{Create an unordered list (Deprecated)}
 \usage{
 CreateUnorderedList(items)
 }
