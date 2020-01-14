@@ -33,6 +33,11 @@ knit_to_html <- function(input, parameters = list(), self_contained = FALSE){
                     output_options = list(self_contained = self_contained),
                     params = parameters)
   output_html <- readr::read_file(paste0(temp_dir, path_sep, temp_file))
+
+  #Clean up HTML
+  output_html <- stringr::str_replace_all(output_html, "\"(?=[^<]*>)" , "'")
+
+  #Delete temp file
   unlink(paste0(temp_dir, path_sep, temp_file))
 
   #Return output
